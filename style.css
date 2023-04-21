@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
     color: white !important;
-   
+
 }
 
 .head-slogan {
     width: 100% !important;
-    background-color:black !important;
+    background-color: black !important;
+    overflow: hidden;
+
+}
+
+.solgan {
+    width: 100%;
+    -webkit-animation: scrolling-left2 20s linear infinite;
+    animation: scrolling-left2 60s linear infinite;
 }
 
 .hero-section {
@@ -18,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .hero-section h1 {
@@ -31,11 +39,12 @@
     color: white;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0px 5px 39px rgba(0,0,0,1);
+    text-shadow: 0px 5px 39px rgba(0, 0, 0, 1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-.logo{
+
+.logo {
     position: absolute;
     height: 200px;
     width: 300px;
@@ -43,8 +52,9 @@
     left: 15%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    text-shadow: 0px 5px 39px rgba(0,0,0,1);
+    text-shadow: 0px 5px 39px rgba(0, 0, 0, 1);
 }
+
 #carouselExampleFade {
     height: 100% !important;
     background: linear-gradient(180deg, #11101062 30%, #331010) !important;
@@ -68,48 +78,55 @@
 }
 
 /* page-two */
-.page-two{
+.page-two {
     text-align: center;
     position: relative;
 }
-.two-head{
+
+.two-head {
     font-size: 2rem;
     margin-top: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.dash{
+
+.dash {
     color: rgba(128, 128, 128, 0.71) !important;
     margin: 20px 0 !important;
 }
 
-.card-container{
+.card-container {
     height: 100%;
     margin: 0 10%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.card-container p ul li{
-    color:  gray !important;
+
+.card-container p ul li {
+    color: gray !important;
 }
-.doc-card{
+
+.doc-card {
     height: 500px;
     width: 350px;
     text-align: center;
 }
-.doc-card img{
+
+.doc-card img {
     height: 180px !important;
     width: 100%;
 }
-.page-three{
+
+.page-three {
     height: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.document-container{
+
+.document-container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -117,18 +134,21 @@
     align-items: center;
     flex-direction: column;
 }
-.para ol li{
+
+.para ol li {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.767) !important;
 }
-.about{
-    height: 100% !important; 
+
+.about {
+    height: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.about-cont{
+
+.about-cont {
     margin: 20px 0;
     width: 80%;
     display: flex;
@@ -136,25 +156,30 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.about-cont img{
+
+.about-cont img {
     height: 300px;
     width: 500px;
 }
-.about-text{
+
+.about-text {
     margin: 3% 4%;
     width: 70% !important;
     text-align: center;
 }
-.about-text p{
+
+.about-text p {
     color: gray !important;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
+
 @media(max-width: 600px) {
 
     .hero-section {
@@ -183,7 +208,7 @@ footer{
         text-align: center;
         color: white;
         font-weight: bold;
-      
+
 
     }
 
@@ -191,7 +216,8 @@ footer{
         height: 100vh !important;
         width: 100% !important;
     }
-    .logo{
+
+    .logo {
         position: absolute;
         height: 100px;
         width: 200px;
@@ -199,20 +225,46 @@ footer{
         left: 25%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        text-shadow: 0px 5px 39px rgba(0,0,0,1);
+        text-shadow: 0px 5px 39px rgba(0, 0, 0, 1);
     }
-    .document-container{
-        width:90% !important;
+
+    .document-container {
+        width: 90% !important;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .para ol li, b{
+
+    .para ol li,
+    b {
         font-size: 1rem;
     }
-    .about-cont img{
+
+    .about-cont img {
         height: 300px;
         width: 100%;
+    }
+
+    .doc-card {
+        height: 100%;
+        width: 350px;
+        text-align: center;
+    }
+}
+
+.text-loop {
+    position: relative;
+    animation: loop 30s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-150%);
     }
 }

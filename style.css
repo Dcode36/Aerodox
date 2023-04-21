@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white !important;
+   
 }
 
 .head-slogan {
@@ -209,5 +210,9 @@ footer{
     }
     .para ol li, b{
         font-size: 1rem;
+    }
+    .about-cont img{
+        height: 300px;
+        width: 100%;
     }
 }

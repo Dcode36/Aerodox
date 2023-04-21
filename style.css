@@ -19,7 +19,7 @@
 }
 
 .hero-section {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -72,6 +72,7 @@
     height: 100% !important;
     width: 100%;
     object-fit:  fill;
+    aspect-ratio: 16/9;
 }
 
 .carousel-item {
@@ -276,7 +277,7 @@ footer {
     position: relative;
     animation: loop 30s linear infinite;
     white-space: nowrap;
-    word-spacing: 10px;
+
 }
 
 @keyframes loop {

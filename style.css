@@ -19,7 +19,7 @@
 }
 
 .hero-section {
-    height: 98vh;
+    height: 85vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -69,10 +69,9 @@
 
 
 .carousel-item img {
-    height: 980% !important;
+    height: 100% !important;
     width: 100%;
-    object-fit:  scale-down;
-
+    object-fit:  fill;
 }
 
 .carousel-item {

@@ -71,6 +71,7 @@
 .carousel-item img {
     height: 100% !important;
     width: 100%;
+    object-fit: fill;
 }
 
 .carousel-item {
@@ -250,6 +251,9 @@ footer {
         height: 100%;
         width: 350px;
         text-align: center;
+    }
+    .about-text h4{
+        margin: 10px 0;
     }
 }
 
